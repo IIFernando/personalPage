@@ -1,0 +1,164 @@
+/* Customização do body com imagem de fundo */
+body {
+    background-image: url('/Assets/fundo.jpg');
+    background-size: cover;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Customização do menu de seleção */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #cddceb;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: rgba(0, 115, 230, 0.5);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #faf8f7;
+    color: #000000;
+}
+
+/* Customizações no post e na imagem */
+.conteudo {
+    display: none;
+}
+
+.conteudo.active {
+    display: block;
+}
+
+.post {
+    width: 450px;
+    background-color: rgba(62, 65, 109, 0.9);
+    padding: 15px;
+    border: 5px solid #ffffff;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.post_title {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.post_content {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.post_image {
+    margin-bottom: 5px;
+}
+
+img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Customizações das tabelas utilizadas em formação e portifólio */
+table {
+    width: 100%;
+    border-spacing: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    font-size: 14px;
+    border-radius: 10px; 
+}
+
+th {
+    background-color: #0073e6;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px; 
+}
+
+
+td {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+h3{
+    text-align: center;
+}
+
+.icone-github {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+/* Customização do meu formulário */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    max-width: 300px;
+}
+
+form button {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005bb5;
+}

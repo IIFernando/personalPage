@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>Página Pessoal</title>
+    <!-- Incluindo uma folha de estilos externa chamada style.css -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .conteudo {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Aluno - Fernando Alves de Araujo
+         RU - 3880995 -->
+
+    <!-- Menu com links âncora para navegar -->
+    <header>
+        <h1 id="title">    
+            <nav> 
+                <ul>           
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </h1>
+    </header>
+
+    <!-- Seção "Sobre Mim" -->
+    <div id="sobre" class="conteudo">
+        <article class="post">
+            <header>
+                <h3 class="post_title">Fernando Araujo</h3>
+            </header>
+            <div>
+                <p class="post_content">
+                    <img src="/Assets/fernando_ia.JPG" alt="Fernando_AI">
+                    Olá bem-vindo a minha Pagina pessoal, sou profissional da área Fiscal há mais de uma década 
+                    com experiência em rotinas como: Apurações de impostos como ICMS/IPI, ISS, ICMS, PIS/COFINS, IRPJ/CSLL e CSRF, 
+                    emissão de documentos fiscais municipais e estaduais e entrega de obrigações acessórias. Hoje atuo em uma grande 
+                    empresa no ramo logístico com foco nas responsabilidades municipais, estou me formando na área de tecnologia pois
+                    vejo uma grande oportunidade de agregar este novo conhecimento com a área fiscal. Tambem gosto de trabalhar com manipulação de dados
+                    e criação de Dashboards interativos.
+                </p>
+            </div>
+        </article>
+    </div>
+
+     <!-- Seção "Portfólio" -->
+     <!-- Uma tabela que lista seus projetos pessoais e links para seus repositórios no GitHub -->
+    <div id="portfolio" class="conteudo">
+        <article class="post">
+            <div>
+                <h3>Abaixo listo projetos pessoais que estou trabalhando, todos alocados no meu Github</h3>
+
+                <p class="post_content">
+                    <table>
+                        <tr>
+                          <th>Projetos</th>
+                        </tr>
+                        <tr>
+                          <td>Automações - Projeto que executa algumas atividades automaticamente.
+                            <a href="https://github.com/IIFernando/Projetos/tree/main/Automa%C3%A7%C3%A3o" target="_blank">
+                            <img src="/Assets/icone-github.png" alt="GitHub" class="icone-github"></td>
+                        </tr>
+                        <tr>
+                          <td>Consulta de CNPJs - Retorna uma consulta na receita federal a partir de uma lista em excel passada.
+                            <a href="https://github.com/IIFernando/Projetos/tree/main/Consulta%20de%20CNPJ" target="_blank">
+                            <img src="/Assets/icone-github.png" alt="GitHub" class="icone-github"></td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Conversor de PDFs - Converte arquivos PDFs passados em planilhas.
+                            <a href="https://github.com/IIFernando/Projetos/tree/main/Conversor%20PDF" target="_blank">
+                            <img src="/Assets/icone-github.png" alt="GitHub" class="icone-github"></td>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Conversor NFTS - Lê um livro fiscal e gera o arquivo para a prefeitura, para uma escrituração em lote.
+                            <a href="https://github.com/IIFernando/Projetos/tree/main/NFTS_SP" target="_blank">
+                            <img src="/Assets/icone-github.png" alt="GitHub" class="icone-github"></td>
+                          </td>
+                        </tr>
+                      </table>
+
+                </p>
+            </div>
+        </article>
+    </div>
+
+    <!-- Seção "Formação" -->
+    <div id="formacao" class="conteudo">
+        <article class="post">
+            <div>
+                <p class="post_content">
+                    <table>
+                        <tr>
+                            <th>Formações e Cursos</th>
+                        </tr>
+                        <tr>
+                            <td>Analise e desenvolvimento de sistemas</td>
+                        </tr>
+                        <tr>
+                            <td>Analista Fiscal + Key User SAP e Mastersaf </td>
+                        </tr>
+                        <tr>
+                            <td>Contabilidade Financeira</td>
+                        </tr>
+                        <tr>
+                            <td>Excel 365</td>
+                        </tr>
+                        <tr>
+                            <td>Power BI</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                        </tr>
+                      </table>
+                </p>
+            </div>
+        </article>
+    </div>
+
+    <!-- Seção "Contato" com um formulário -->
+    <!-- Um formulário de contato com campos para nome, email e mensagem -->
+    <!-- Estou utilizando a API do Formspree para tornalo funcional -->
+    <div id="contato" class="conteudo">
+        <article class="post">
+            <div>
+                <p class="post_content">
+                    <section>
+                        <form id="meuFormulario" action="https://formspree.io/f/xnqkwpad" method="POST">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required>
+                
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </section>
+                </p>
+            </div>
+        </article>
+    </div>
+
+    <!-- JavaScript para controlar a exibição das seções -->
+    <script>
+        function mostrarSecao(secao) {
+            var conteudos = document.querySelectorAll('.conteudo');
+            conteudos.forEach(function (conteudo) {
+                conteudo.style.display = 'none';
+            });
+            // Mostre o conteúdo da seção desejada
+            var secaoAMostrar = document.getElementById(secao);
+            if (secaoAMostrar) {
+                secaoAMostrar.style.display = 'block';
+            }
+        }
+        
+        // Adicionar ouvintes de eventos para os links
+        document.querySelectorAll('nav a').forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                var secao = link.getAttribute('href').substring(1); // Obtém o ID da seção
+                mostrarSecao(secao);
+                event.preventDefault(); // Evita o comportamento padrão do link
+            });
+        });
+
+    </script>
+
+</body>
+</html>
