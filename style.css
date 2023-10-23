@@ -1,6 +1,6 @@
 /* Customização do body com imagem de fundo */
 body {
-    background-image: url('/Assets/fundo.jpg');
+    background-image: url('fundo.jpg');
     background-size: cover;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
